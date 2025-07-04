@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolusiKu - Jasa Profesional untuk Kebutuhan Akademik & Kreatif</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #89CFF0; /* Biru muda */
+            --secondary: #0096FF;
+            --dark: #1E3A8A;
+            --light: #E6F7FF;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F8FAFC;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--light) 0%, var(--primary) 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img src="https://placehold.co/50x50/89CFF0/FFFFFF?text=SK" alt="Logo SolusiKu berupa huruf S dan K dengan gradasi biru muda" class="rounded-full">
+                        <span class="ml-3 text-xl font-semibold text-[--dark]">SolusiKu</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#" class="text-[--dark] hover:text-[--secondary] px-3 py-2 font-medium">Beranda</a>
+                    <a href="#services" class="text-[--dark] hover:text-[--secondary] px-3 py-2 font-medium">Layanan</a>
+                    <a href="#about" class="text-[--dark] hover:text-[--secondary] px-3 py-2 font-medium">Tentang Kami</a>
+                    <a href="#testimonials" class="text-[--dark] hover:text-[--secondary] px-3 py-2 font-medium">Testimoni</a>
+                    <a href="#contact" class="bg-[--primary] text-white px-4 py-2 rounded-md font-medium hover:bg-[--secondary] transition duration-300">Hubungi Kami</a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-[--dark] hover:text-[--secondary]">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 text-base font-medium text-[--dark] hover:text-[--secondary]">Beranda</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-[--dark] hover:text-[--secondary]">Layanan</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-[--dark] hover:text-[--secondary]">Tentang Kami</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-[--dark] hover:text-[--secondary]">Testimoni</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-white bg-[--primary] rounded-md">Hubungi Kami</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 items-center gap-10">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-[--dark] mb-4">Solusi Profesional untuk <span class="text-[--secondary]">Kebutuhan Akademik & Kreatif Anda</span></h1>
+                    <p class="text-lg text-gray-700 mb-8">Kami menyediakan berbagai layanan profesional mulai dari desain grafis hingga bantuan akademik untuk membantu kesuksesan Anda.</p>
+                    <div class="flex space-x-4">
+                        <a href="#services" class="bg-[--secondary] text-white px-6 py-3 rounded-lg font-medium hover:bg-[--dark] transition duration-300">Lihat Layanan</a>
+                        <a href="#contact" class="border-2 border-[--secondary] text-[--dark] px-6 py-3 rounded-lg font-medium hover:bg-[--primary] hover:border-transparent transition duration-300">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <img src="solusiku 600x500.jpg" alt="Ilustrasi tim profesional SolusiKu sedang bekerja di ruang kerja modern dengan perangkat komputer dan dokumen" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-[--dark] mb-4">Layanan Kami</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Kami menawarkan berbagai solusi profesional untuk kebutuhan akademik dan kreatif Anda.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg transition duration-500 ease-in-out">
+                    <div class="w-16 h-16 bg-[--light] rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[--secondary]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.5M17 11h.01M13.5 16h-4m8-8a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[--dark] mb-3">Jasa Desain Grafis</h3>
+                    <p class="text-gray-600">Desain logo, brosur, banner, dan materi promosi lainnya dengan kualitas profesional.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg transition duration-500 ease-in-out">
+                    <div class="w-16 h-16 bg-[--light] rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[--secondary]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[--dark] mb-3">Jasa Ketik Laporan</h3>
+                    <p class="text-gray-600">Pengetikan laporan, skripsi, makalah dengan format yang rapi dan sesuai standar.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg transition duration-500 ease-in-out">
+                    <div class="w-16 h-16 bg-[--light] rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[--secondary]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[--dark] mb-3">Jasa Joki Tugas</h3>
+                    <p class="text-gray-600">Pengerjaan tugas kuliah, esai, dan pekerjaan akademik lainnya dengan hasil berkualitas.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-lg transition duration-500 ease-in-out">
+                    <div class="w-16 h-16 bg-[--light] rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[--secondary]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[--dark] mb-3">Jasa Desain UI/UX</h3>
+                    <p class="text-gray-600">Desain antarmuka pengguna yang menarik dan pengalaman pengguna yang optimal untuk aplikasi dan website Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-20 bg-[--light]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-[--dark] mb-4">Mengapa Memilih SolusiKu?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Keunggulan kami yang membedakan dengan layanan lainnya.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white rounded-full shadow-lg mx-auto mb-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[--secondary]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[--dark] mb-2">Kualitas Terjamin</h3>
+                    <p class="text-gray-600">Hasil kerja kami selalu melalui quality control ketat untuk memastikan kepuasan Anda.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white rounded-full shadow-lg mx-auto mb-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[--secondary]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[--dark] mb-2">Tepat Waktu</h3>
+                    <p class="text-gray-600">Komitmen kami adalah menyelesaikan pekerjaan sebelum deadline yang ditentukan.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white rounded-full shadow-lg mx-auto mb-4 flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[--secondary]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-[--dark] mb-2">Harga Kompetitif</h3>
+                    <p class="text-gray-600">Kualitas premium dengan harga terjangkau dan sistem pembayaran yang fleksibel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-[--dark] mb-4">Apa Kata Klien Kami?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Testimoni dari klien yang telah menggunakan layanan kami.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-[--light] p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="mahasiswa informatika.jpg" alt="Foto Ahmad Santoso, mahasiswa Teknik Informatika Universitas Indonesia" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-[--dark]">Ahmad Santoso</h4>
+                            <p class="text-gray-500 text-sm">Mahasiswa Teknik Informatika</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Joki tugas dari SolusiKu sangat membantu saat saya sibuk magang. Hasilnya rapi dan sesuai deadline. Recommended banget!"</p>
+                    <div class="flex">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-[--light] p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="rina.jpg" alt="Foto Rina Wijaya, owner Kafe Seribu Rasa di Bandung" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-[--dark]">Rina Wijaya</h4>
+                            <p class="text-gray-500 text-sm">Owner Kafe Seribu Rasa</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Desain menu dan spanduk dari SolusiKu sangat kreatif! Pelanggan sering memuji tampilan visual kafe kami sekarang."</p>
+                    <div class="flex">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1
